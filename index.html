@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DataTab</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1 class="logo">DataTAb</h1>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#">Blog</a>
+     <!--  <a href="#features">Features</a><a href="#footer">Contact</a>-->
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+ <section class="hero">
+  <div class="hero-content">
+    <div class="hero-heading">
+      <span class="badge"><i data-lucide="sparkles"></i> Featured Project</span>
+      <h2 class="hero-title">TodoTab</h2>
+    </div>
+    <p class="hero-subtitle">
+      A beautifully simple to-do list that helps you organize your life with elegance and efficiency.
+    </p>
+    <div class="hero-buttons">
+      <a href="https://todotab-4794a.web.app/" class="btn primary">Try TodoTab</a>
+      <a href="https://chromewebstore.google.com/detail/datatab-todo-list/ccbnmhlblofbjhbedmmcmomcmiilepfn?authuser=0&hl=en-GB" class="btn secondary" target="_blank">Get Chrome Extension</a>
+    </div>
+  </div>
+  <img
+    src="images\preview.png"
+    alt="TodoTab Preview"
+    class="hero-image"
+  />
+</section>
+
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="feature">
+      <i data-lucide="mouse-pointer-click"></i>
+      <h3>Time Your ToDo</h3>
+      <p>Organize your tasks effortlessly with a clean, interactive Timeline.</p>
+      <img src="images\Feature1.png" alt="Feature 1" />
+    </div>
+    <div class="feature">
+      <i data-lucide="folder"></i>
+      <h3>Smart Categorization</h3>
+      <p>Group your work into categories to stay focused and efficient.</p>
+      <img src="images\Feature2.png" alt="Feature 2" />
+    </div>
+    <div class="feature">
+      <i data-lucide="wifi"></i>
+      <h3>Real-Time Sync</h3>
+      <p>Access your to-dos seamlessly from anywhere with real-time synchronization.</p>
+      <img src="images\Feature3.png" alt="Feature 3" />
+    </div>
+    <div class="feature">
+      <i data-lucide="check-circle-2"></i>
+      <h3>Stay Organized</h3>
+      <p>Track daily tasks and goals effortlessly with a minimal and distraction-free interface.</p>
+    </div>
+  </section>
+
+  <!-- Other Projects Section -->
+  <section id="projects" class="projects">
+  <h2>Other Projects</h2>
+  <div class="projects-scroll">
+
+    <div class="project-card" onclick="window.open('https://datatab-backtrackdsa.onrender.com/','_blank')">
+      <i data-lucide="workflow" class="bt" class="project-icon" ></i>
+      <h3 class="bt">BackTrack DSA</h3>
+      <p>Simplifies complex problems into simple breakdowns for learning using AI.</p>
+      <i data-lucide="external-link" class="external-link"></i>
+    </div>
+
+    <div class="project-card" onclick="window.open('https://poornima20.github.io/JobTab-DataTab/','_blank')">
+      <i data-lucide="briefcase-business" class="pt" class="project-icon"></i>
+      <h3 class="pt">JobTab</h3>
+      <p>Explore and sort companies, click to visit careers.</p>
+      <i data-lucide="external-link" class="external-link"></i>
+    </div>
+
+    <div class="project-card" onclick="window.open('https://poornima20.github.io/DataTab-ProjectVisualizer/','_blank')">
+      <i data-lucide="sparkles" class="ot" class="project-icon" ></i>
+      <h3 class="ot">More</h3>
+      <p>Discover all my current and upcoming projects.</p>
+      <i data-lucide="external-link" class="external-link"></i>
+    </div>
+
+  </div>
+
+  <div class="projects-controls">
+    <button class="scroll-btn left"><i data-lucide="chevron-left"></i></button>
+    <button class="scroll-btn right"><i data-lucide="chevron-right"></i></button>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="footer-links">
+      <a href="https://github.com/poornima20" target="_blank"><i data-lucide="github" style="transition: color 0.3s;"
+         onmouseover="this.style.color='#444'"
+         onmouseout="this.style.color=''"></i></a>
+      <a href="https://www.linkedin.com/in/poornima-suresh-37a927214/" target="_blank" ><i data-lucide="linkedin" style="transition: color 0.3s;"
+         onmouseover="this.style.color='#0A66C2'"
+         onmouseout="this.style.color=''"></i></a>
+      <a href="mailto:poornima20suresh@gmail.com" target="_blank">
+            <i data-lucide="mail" 
+                style="transition: color 0.3s;"
+                onmouseover="this.style.color='#FFD700'"
+                onmouseout="this.style.color=''">
+            </i>
+            </a>
+    </div>
+    <p style="color: #888">© 2025 Fullmoon</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
