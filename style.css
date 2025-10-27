@@ -262,11 +262,10 @@ section {
   font-weight: 600;
 }
 
-/* Scroll container */
 .projects-scroll {
   display: flex;
-  overflow-x: auto;               /* ⛔ no manual scroll, button only */
-  overflow-y: visible;
+  overflow-x: auto;                /* 👈 scrolling works */
+  overflow-y: hidden;
   align-items: center;
   gap: 1rem;
   padding-inline: calc(50vw - 125px);
@@ -275,9 +274,17 @@ section {
   scroll-behavior: smooth;
   position: relative;
   z-index: 1;
-  padding-top: 1rem;               /* Prevent hover clipping */
+  padding-top: 1rem;
   padding-bottom: 1rem;
+
+  -webkit-overflow-scrolling: touch; /* 👈 smooth scrolling on iOS */
+  scrollbar-width: none;            /* 👈 hide scrollbar in Firefox */
 }
+
+.projects-scroll::-webkit-scrollbar {
+  display: none;                    /* 👈 hide scrollbar in Chrome/Safari/Edge */
+}
+
 
 /* Project card */
 .project-card {
