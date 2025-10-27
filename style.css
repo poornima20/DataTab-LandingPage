@@ -164,21 +164,24 @@ section {
 }
 
 
-
 .btn {
   padding: 0.8rem 1.5rem;
   border-radius: 8px;
   font-size: 1rem;
   text-decoration: none;
-  margin: 0 0.5rem;
   display: inline-block;
   font-weight: 500;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+
+  /* 👇 Force uniform button width */
+  min-width: 220px; /* adjust as needed */
+  box-sizing: border-box;
 }
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .btn.primary {
@@ -189,7 +192,9 @@ section {
 .btn.secondary {
   border: 1px solid var(--border);
   color: var(--text);
+  background: transparent;
 }
+
 
 
 
@@ -245,7 +250,6 @@ section {
 }
 
 /* ================= PROJECTS ================= */
-/* ================= PROJECTS SECTION ================= */
 .projects {
   padding: 2rem 0;
   background: #fafafa;
@@ -261,7 +265,7 @@ section {
 /* Scroll container */
 .projects-scroll {
   display: flex;
-  overflow-x: hidden;               /* ⛔ no manual scroll, button only */
+  overflow-x: auto;               /* ⛔ no manual scroll, button only */
   overflow-y: visible;
   align-items: center;
   gap: 1rem;
